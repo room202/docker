@@ -17,7 +17,7 @@
 ### Docker のインストール  
 http://docs.docker.com/desktop/install/windows-install/
 
- ### Dockerの起動コマンド
+## Dockerの起動コマンド
 
  ```bash
 # Docker起動
