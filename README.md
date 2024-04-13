@@ -68,9 +68,9 @@
   ![](images/020.png)
 
 - Dockerのインストール完了  
-  ![](images/020.png)
+  ![](images/021.png)
 
-#### 「Docker Desktop - Unexpected WSL error」エラーが発生した場合の対処法
+## 「Docker Desktop - Unexpected WSL error」エラーが発生した場合の対処法
   - 管理者権限でコマンドプロンプトを起動
   - 下記コマンドを実行
   ```bash
