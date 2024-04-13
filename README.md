@@ -62,9 +62,9 @@
   ![](images/018.jpg)
 
 - 「Continue without signing in」をクリック
-  ![](images/019.jpg)
+  ![](images/019.png)
 
-- 「Skip」をクリック  
+- 「Skip survey」をクリック  
   ![](images/020.png)
 
 - Dockerのインストール完了  
