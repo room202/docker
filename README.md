@@ -17,6 +17,13 @@
 ### Docker のインストール  
 http://docs.docker.com/desktop/install/windows-install/
 
+- 「Docker Desktop - Unexpected WSL error」エラーが発生した場合の対処法
+  - 管理者権限でコマンドプロンプトを起動
+  - 下記コマンドを実行
+  ```bash
+  wsl --update
+  ```
+
 ## Dockerの起動コマンド
 
  ```bash
