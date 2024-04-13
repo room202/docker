@@ -76,7 +76,6 @@
   ```bash
   wsl --update
   ```
-
 ## Dockerの起動コマンド
 
  ```bash
@@ -86,4 +85,3 @@ docker compose up -d
 # Docker終了
 docker compose down
 ```
-
