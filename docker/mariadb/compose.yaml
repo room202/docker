@@ -1,0 +1,18 @@
+# MariaDBのコンテナを作成する
+services:
+  db:
+    # MariaDBのイメージを指定
+    image: mariadb:10.7
+    # 環境変数の設定
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: testdb
+      MARIADB_USER: testuser
+      MARIADB_PASSWORD: testpass
+    # データの永続化の設定
+    volumes:
+      - db-data:/var/lib/mysql
+# データの永続化の設定
+volumes:
+  db-data:
+     
