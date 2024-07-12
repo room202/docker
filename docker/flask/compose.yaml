@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .  # Dockerfile読み込み
+    environment:
+      FLASK_ENV: development
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/usr/src/app
