@@ -1,0 +1,34 @@
+# WordPressのコンテナを作成する
+services:
+  db:
+    # MariaDBのイメージを指定
+    image: mariadb:10.7
+    # 環境変数の設定
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+    # データの永続化の設定
+    volumes:
+      - db-data:/var/lib/mysql
+  wordpress:
+    image: wordpress:6.0
+    # コンテナの起動順の設定
+    depends_on:
+      - db
+    # 環境変数の設定
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    # ポート設定(ポートフォワーディング)
+    ports:
+      - "8080:80"
+    # データ保存先の設定
+    volumes:
+      - ./html:/var/www/html
+# データの永続化の設定
+volumes:
+  db-data:
