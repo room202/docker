@@ -1,0 +1,6 @@
+services:
+  java:
+    image: openjdk:21-slim-bullseye
+    tty: true
+    volumes:
+      - ./java:/java
