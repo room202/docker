@@ -74,7 +74,24 @@
 - Dockerのインストール完了  
   ![](images/021.png)
 
-## 「Docker Desktop - Unexpected WSL error」エラーが発生した場合の対処法
+## エラー対策が発生した場合の解決策
+
+### 「クラスが登録されていません」エラがー発生した場合
+
+エラー内容
+
+```
+クラスが登録されていません
+エラー コード: Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG
+```
+
+解決策
+
+下記サイトから`wsl.2.3.26.0.x64.msi`をダウンロードしてインストールする
+
+https://github.com/microsoft/WSL/releases
+
+### 「Docker Desktop - Unexpected WSL error」エラーが発生した場合
   - 管理者権限でコマンドプロンプトを起動
   - 下記コマンドを実行
   ```bash
