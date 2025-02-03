@@ -16,8 +16,7 @@
 - 下記項目のチェックをONにする
   - 「Linux用windowsサブシステム」
   - 「仮想マシンプラットフォーム」
-  ![](images/003.png)  
-  ![](images/005.png)
+  ![](images/003.png)  ![](images/005.png)
 
 - 有効化されるまで待つ
   ![](images/006.png)
