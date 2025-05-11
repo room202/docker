@@ -183,16 +183,36 @@ docker container run --name db --rm --env MYSQL_ROOT_PASSWORD=secret --env MYSQL
 mysql --host=127.0.0.1 --port=3306 --user=app --password=pass1234 sample
 ```
 
+### コンテナをバックグラウンドで実行する
 
+```bash
+docker container run -d
+docker container run --detach
 
+# nginxをバックグラウンドで実行する
+docker container run --rm -p 8080:80 -d nginx
+```
 
+### コンテナの出力を確認する
 
+```bash
+docker container logs -f ubuntu
+docker container logs --follow ubuntu
+```
 
+ログ確認よう(起動失敗するコマンド)
 
+```bash
+# 1. envオプションが無いので起動自体失敗する
+docker container run --name db --rm --detach --publish 5432:5432 postgres
 
+# 2. --rmを消して終了済みコンテナに残しておく
+docker container run --name db --detach --env POSTGRES_PASSWORD=secret --publish 5432:5432 postgres
 
-
-
+# 3. ログを確認してみる
+docker container logs db
+docker container logs -f db
+```
 
 ## dokcer compose
 
