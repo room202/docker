@@ -5,8 +5,6 @@
 
 ## コンテナを起動する
 
-`docker container run`
-
 ```bash
 # 練習用コマンド : Hello World
 docker container run hello-world
@@ -36,6 +34,12 @@ docker container ls --all
 docker container stop [CONTAINER ID] or [NAMES]
 docker container stop cb73dd3cc271
 docker container stop blissful_mcclintock
+```
+
+## コンテンを再開する
+
+```bash
+docker container start [CONTAINER ID] or [NAMES]
 ```
 
 ## コンテナを削除する

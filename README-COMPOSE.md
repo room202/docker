@@ -1,5 +1,17 @@
 # コンテナの作成に関わる : docker compose
 
+- 複数のコンテナをまとめて起動できる
+- YAML形式で記述する
+- ファイル名は`compose.yaml`から`compose.yml`
+
+```bash
+docker compose up
+docker compose dows
+docker compose ps
+docker compose exec
+```
+
+
 | コマンド                           | イメージのビルド                           | コンテナの作成 | コンテナの実行 |
 | ---------------------------------- | ------------------------------------------ | -------------- | -------------- |
 | build                              | ○                                          |                |                |
