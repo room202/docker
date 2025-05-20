@@ -8,7 +8,7 @@
 
 [コンテナの作成に関わる : docker compose](README-COMPOSE.md)
 
-[Dockerfile の活用例](README-COMPOSE.md)
+[Dockerfile の活用例](README-DOCKERFILE.md)
 
 ## よく使う docker compose コマンド
 
